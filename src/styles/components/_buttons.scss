@@ -8,10 +8,18 @@
     text-decoration: none;
     white-space: nowrap;
     text-align: center;
+    border-radius: 8px;
+    opacity: 50%;
+    transition: transform, .2s ease;
+
+    :hover {
+        transform: scale(1.0.5);
+    }
 
     &--primary {
         color: variables.$textColor;
-        background-color: #4F2AC3;
+        background-image: linear-gradient(variables.$spect4, green);
+
     }
 
     @media (max-width: 640px) {

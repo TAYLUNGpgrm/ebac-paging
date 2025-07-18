@@ -1,13 +1,16 @@
 @use '/src/styles/variables';
 
 .infos-bar {
+    background-image: linear-gradient(variables.$spect1, variables.$spect2);
     padding: 16px 24px;
-    background-color: white;
     display: flex;
     justify-content: space-between;
     margin: 8px;
+    border-radius: 10px;
 
     &__ul {
+        opacity: 50%;
+        cursor: pointer;
         display: flex;
         gap: 40px;
 
@@ -20,10 +23,17 @@
                 font-size: 18px;
                 display: block;
             }
+        }:hover {
+            color: white;
         }
+    }:hover {
+        opacity: 90%;
+        transition: .7s ease;
     }
+
     @media (max-width: 640px) {
         display: block;
+
         &__ul {
             display: block;
 
