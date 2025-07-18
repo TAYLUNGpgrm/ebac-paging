@@ -1,0 +1,59 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0;
+
+    &--frontend {
+    background-image: linear-gradient(variables.$spect1, variables.$spect2);
+    }
+
+    &--ux-ui {
+    background-image: linear-gradient(variables.$spect2, variables.$spect3);
+    }
+
+    &--data-science {
+    background-image: linear-gradient(variables.$spect3, variables.$spect4);
+    }
+
+    &--backend {
+    background-image: linear-gradient(variables.$spect4, variables.$spect3);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &--image {
+        max-width: 360px;
+        height: 196px;
+        border-radius: 6px;
+    }
+
+    &__detail {
+        &__title{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            color: variables.$textColor;
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        
+    }
+}

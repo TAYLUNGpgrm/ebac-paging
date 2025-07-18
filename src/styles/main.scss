@@ -1,5 +1,9 @@
+@use 'components/buttons';
+@use 'components/infosBar';
+@use 'event';
 @use 'hero';
 @use 'reset';
+@use 'variables';
 
 .container {
     max-width: 100%;
