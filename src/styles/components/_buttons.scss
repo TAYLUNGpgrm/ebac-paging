@@ -19,13 +19,15 @@
     &--primary {
         color: variables.$textColor;
         background-image: linear-gradient(variables.$spect4, green);
-
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     @media (max-width: 640px) {
         display: block;
         align-items: center;
-        width: 100%;
     }
 
     @media (max-width: 1024px) {
